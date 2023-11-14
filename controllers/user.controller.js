@@ -19,8 +19,8 @@ module.exports = {
                 data: getUser
             })
         } else {
-            res.json({
-                message: `User ${id} not found`
+            res.status(404).json({
+                message: `User ${id} does not exist`
             })
         }
 

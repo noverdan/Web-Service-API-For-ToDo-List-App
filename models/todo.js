@@ -14,8 +14,14 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   todo.init({
-    user_id: DataTypes.INTEGER,
-    task: DataTypes.STRING
+    user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    task: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   }, {
     sequelize,
     modelName: 'todo',
