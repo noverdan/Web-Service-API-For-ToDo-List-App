@@ -21,7 +21,31 @@ Alamat untuk mengakses API :
 
       https://tes.com/:endpoint
 
+User untuk melakukan demo API :
+|email| password |
+|--|--|
+| demo@mail.com | demo123 |
+
+
 # Endpoint Route
+
+Endpoint yang tersedia :
+
+`POST` `/users/register`
+
+`POST` `/users/login`
+
+`POST` `/users/:userId/todos`
+
+`GET` `/users/:userId/todos`
+
+`GET` `/users/:userId/todos/:todoId`
+
+`POST` `/users/:userId/todos/:todoId`
+
+`DELETE` `/users/:userId/todos/:todoId`
+
+`DELETE` `/users/:userId/todos`
 
 ## **Register**
 
@@ -325,6 +349,7 @@ Alamat untuk mengakses API :
 ## **Mengupdate Todo yang dimiliki user**
 
 **Endpoint :**
+
 `POST` `/users/:userId/todos/:todoId`
 
 **Request :**
