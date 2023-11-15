@@ -19,7 +19,7 @@ Web service API untuk aplikasi To Do List sederhana. Dibuat menggunakan Express.
 
 Alamat untuk mengakses API :
 
-      https://tes.com/:endpoint
+      https://noverdan-todolist-api-services.up.railway.app/:endpoint
 
 User untuk melakukan demo API :
 |email| password |
