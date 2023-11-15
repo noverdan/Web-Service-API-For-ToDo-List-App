@@ -1,6 +1,9 @@
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
+require('dotenv').config()
 const { user, todo } = require('../models')
+
+const SECRET = process.env.SECRET_KEY
 
 module.exports = {
     getAllUser: async (req, res) => {
@@ -90,7 +93,7 @@ module.exports = {
                         message: "wrong-password"
                     })
                 } else if (isPwdCorrect) {
-                    const token = jwt.sign({ email: data.email }, "Gja7qha76TmBVi39Jhg51jB", { expiresIn: '1d' })
+                    const token = jwt.sign({ email: data.email }, SECRET, { expiresIn: '1d' })
                     res.json({
                         message: "login-successful",
                         userID: getUser.id,
