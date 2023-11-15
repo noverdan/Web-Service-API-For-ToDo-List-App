@@ -11,9 +11,9 @@ Web service API untuk aplikasi To Do List sederhana. Dibuat menggunakan Express.
   - [Menambahkan Todo baru](#menambahkan-todo-baru)
   - [Melihat semua todo yang dimiliki user](#melihat-semua-todo-yang-dimiliki-user)
   - [Melihat detail todo yang dimiliki user](#melihat-detai-todo-yang-dimiliki-user)
-  - [Mengupdate Todo yang dimilliki user](#mengupdate-todo-yang-dimilliki-user)
-  - [Menghapus Todo yang dimilliki user](#menghapus-todo-yang-dimiliki-user)
-  - [Menghapus semua Todo yang dimilliki user](#menghapus-semua-todo-yang-dimiliki-user)
+  - [Mengupdate Todo yang dimiliki user](#mengupdate-todo-yang-dimiliki-user)
+  - [Menghapus Todo yang dimiliki user](#menghapus-todo-yang-dimiliki-user)
+  - [Menghapus semua Todo yang dimiliki user](#menghapus-semua-todo-yang-dimiliki-user)
 
 # API address
 
@@ -25,7 +25,7 @@ Alamat untuk mengakses API :
 
 ## **Register**
 
-\***\*Endpoint :\*\***
+**Endpoint :**
 
 `POST` `/users/register`
 
@@ -73,7 +73,7 @@ Alamat untuk mengakses API :
 
 ## **Login**
 
-\***\*Endpoint :\*\***
+**Endpoint :**
 
 `POST` `/users/login`
 
@@ -123,7 +123,7 @@ Alamat untuk mengakses API :
 
 ## **Menambahkan Todo baru **
 
-\***\*Endpoint :\*\***
+**Endpoint :**
 
 `POST` `/users/:userId/todos`
 
@@ -189,7 +189,7 @@ Alamat untuk mengakses API :
 
 ## **Melihat semua todo yang dimiliki user**
 
-\***\*Endpoint :\*\***
+**Endpoint :**
 
 `GET` `/users/:userId/todos`
 
@@ -255,7 +255,7 @@ Alamat untuk mengakses API :
 
 ## **Melihat detail todo yang dimiliki user**
 
-\***\*Endpoint :\*\***
+**Endpoint :**
 
 `GET` `/users/:userId/todos/:todoId`
 
@@ -320,10 +320,9 @@ Alamat untuk mengakses API :
         "message": "jwt malformed"
     }
 
-## **Mengupdate Todo yang dimilliki user**
+## **Mengupdate Todo yang dimiliki user**
 
-\***\*Endpoint :\*\***
-
+**Endpoint :**
 `POST` `/users/:userId/todos/:todoId`
 
 **Request :**
@@ -388,7 +387,7 @@ Alamat untuk mengakses API :
 
 ## **Menghapus Todo yang dimilliki user**
 
-\***\*Endpoint :\*\***
+**Endpoint :**
 
 `DELETE` `/users/:userId/todos/:todoId`
 
@@ -444,9 +443,9 @@ Alamat untuk mengakses API :
         "message": "jwt malformed"
     }
 
-## **Menghapus semua Todo yang dimilliki user**
+## **Menghapus semua Todo yang dimiliki user**
 
-\***\*Endpoint :\*\***
+**Endpoint :**
 
 `DELETE` `/users/:userId/todos`
 
