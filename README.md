@@ -10,7 +10,7 @@ Web service API untuk aplikasi To Do List sederhana. Dibuat menggunakan Express.
   - [Login](#login)
   - [Menambahkan Todo baru](#menambahkan-todo-baru)
   - [Melihat semua todo yang dimiliki user](#melihat-semua-todo-yang-dimiliki-user)
-  - [Melihat detail todo yang dimiliki user](#melihat-detai-todo-yang-dimiliki-user)
+  - [Melihat detail todo yang dimiliki user](#melihat-detail-todo-yang-dimiliki-user)
   - [Mengupdate Todo yang dimiliki user](#mengupdate-todo-yang-dimiliki-user)
   - [Menghapus Todo yang dimiliki user](#menghapus-todo-yang-dimiliki-user)
   - [Menghapus semua Todo yang dimiliki user](#menghapus-semua-todo-yang-dimiliki-user)
@@ -121,7 +121,7 @@ Alamat untuk mengakses API :
         "error": err.message
     }
 
-## **Menambahkan Todo baru **
+## **Menambahkan Todo baru**
 
 **Endpoint :**
 
@@ -253,7 +253,9 @@ Alamat untuk mengakses API :
         "message": "jwt malformed"
     }
 
+
 ## **Melihat detail todo yang dimiliki user**
+
 
 **Endpoint :**
 
@@ -385,7 +387,7 @@ Alamat untuk mengakses API :
         "message": "jwt malformed"
     }
 
-## **Menghapus Todo yang dimilliki user**
+## **Menghapus Todo yang dimiliki user**
 
 **Endpoint :**
 
