@@ -93,6 +93,7 @@ module.exports = {
                     const token = jwt.sign({ email: data.email }, "Gja7qha76TmBVi39Jhg51jB", { expiresIn: '1d' })
                     res.json({
                         message: "login-successful",
+                        userID: getUser.id,
                         token
                     })
                 } else {
